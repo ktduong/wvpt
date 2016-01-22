@@ -1,0 +1,25 @@
+## Basic Theme Info
+name: WVU Brand Patterns
+description: This is the WVU Brand Patterns theme built for CleanSlate. Originally authored by May Day.
+
+## Attributes, Data and Variables
+custom_site_attributes:
+  # For Google Search Console
+  - google_site_verification
+
+## Template Config
+# Specify which templates show up by default when creating a page
+default_templates:
+  content: backpage
+  blog: blog_index
+  article: blog_article
+  error: backpage
+
+## Optimizations
+css:
+  # Turn CSS compression on/off.
+  compress: true
+js:
+  # Turn JavaScript compression and mangling on/off
+  compress: true
+  mangle: true
