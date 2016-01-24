@@ -1,15 +1,15 @@
-Brand Patterns
+West Virginia Public Theatre
 ==================
 
-**Theme Name:** Brand Patterns
+**Theme Name:** West Virginia Public Theatre
 
-**Theme Description:** Theme for Brand Patterns.
+**Theme Description:** Theme for the new West Virginia Public Theatre in association with WVU.
 
-**Developers name(s):** May Day
+**Developers name(s):** Octavia Steffich
 
-**Stash repository URL:** [https://stash.development.wvu.edu/projects/CST/repos/brand-patterns/browse](https://stash.development.wvu.edu/projects/CST/repos/brand-patterns/browse)
+**Stash repository URL:** [https://stash.development.wvu.edu/projects/CST/repos/wvpt/browse](https://stash.development.wvu.edu/projects/CST/repos/wvpt/browse)
 
-**Dependencies necessary to work with this theme:** Sass.
+**Dependencies necessary to work with this theme:** Sass. 
 
 **Other notes, comments, or reminders:**
 

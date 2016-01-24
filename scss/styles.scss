@@ -2,12 +2,44 @@
 //    Pay attention to how you order your Sass files.
 //    Variables & Utilities (mixins) should almost always come before Vendor & Partial files.
 
-// --Plugins, Base, Modules, Layouts
+// --Plugins for Bourbon, Neat, and Normalize
 
-@import '4-custom/variables';
 @import '0-plugins/plugins-dir';
-@import '1-base/base-dir';
-@import '2-modules/modules-dir';
-@import '3-layouts/layouts-dir';
-@import '1-base/ie9';
-@import '4-custom/custom-dir';
+
+
+// WVPT Colors
+$wvpt-blue: #35c3e2;
+$wvpt-red: #ee2d24;
+$wvpt-purple: #5a479d;
+
+//breakpoints
+
+$xlarge: new-breakpoint(min-width 1200px);
+$large: new-breakpoint(min-width 1000px);
+$medium: new-breakpoint(min-width 800px);
+$small: new-breakpoint(min-width 640px);
+$xsmall: new-breakpoint(min-width 320px);
+
+.container, main {@include outer-container;}
+
+.header {
+  margin-top:7em;
+  .logo {
+    margin:auto;
+    height:217px;
+    width:300px;
+    background-image:url("../images/WVPT-logo.png");
+  }
+}
+
+main {
+  .placeholder h1 {
+    text-align:center;
+    font-size:2em;
+    font-weight:600;
+  }
+  .placeholder p {
+    text-align:center;
+    font-weight:600;
+  }
+}
