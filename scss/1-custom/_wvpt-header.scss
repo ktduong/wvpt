@@ -1,0 +1,95 @@
+// regular header
+.header {
+  @include span-columns(12);
+
+  margin-top: 1em;
+  position: relative;
+
+  @include media($xsmall) {
+    margin-bottom: 0;
+  }
+
+  @include media($medium) {
+    margin-bottom: 2em;
+  }
+
+  @include media($large) {
+    margin-bottom: 4em;
+  }
+}
+
+// Logo
+.logo {
+  background-image: url('../images/wvpt-logo-reg.jpg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 586px;
+  margin-top: 1em;
+  position: absolute;
+  text-indent: -9999em;
+  width: auto;
+  z-index: 1;
+
+  @include media($xsmall) {
+    @include span-columns(12);
+    background-repeat: no-repeat;
+    background-size: 303px 93px;
+    height: 93px;
+    margin: 0 0 0 2.5em;
+    width: 303px;
+  }
+
+  @include media($small) {
+    margin: 0 0 0 11em;
+  }
+
+  @include media($medium) {
+    margin: 1em 0 0 .5em;
+  }
+
+  @include media ($large) {
+    @include span-columns(3);
+
+    background-image: url('../images/wvpt-logo-retina.png');
+    background-repeat: no-repeat;
+    background-size: 586px 165px;
+    height: 165px;
+    width: 586px;
+  }
+
+  @include hidpi(1.5) {
+    background-image: url('../images/wvpt-logo-retina.png');
+  }
+}
+
+.header-right {
+  @include span-columns(8);
+
+  float: right;
+  position: relative;
+  z-index: 2;
+
+  @include media($xsmall) {
+    @include span-columns(12);
+    margin-top: 8em;
+  }
+
+  @include media($small) {
+    @include span-columns(12);
+    margin-top: 4em;
+    padding-right: 1em;
+  }
+
+  @include media($medium) {
+    @include span-columns(7);
+    float: right;
+    margin-top: 0;
+  }
+
+  @include media($large) {
+    @include span-columns(8);
+
+    float: right;
+    margin-top: 0;
+  }
+}

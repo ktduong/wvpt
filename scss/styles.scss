@@ -5,41 +5,166 @@
 // --Plugins for Bourbon, Neat, and Normalize
 
 @import '0-plugins/plugins-dir';
+@import '1-custom/wvpt-variables';
+@import '1-custom/wvpt-nav';
+@import '1-custom/wvpt-responsive-nav';
+@import '1-custom/wvpt-buttons';
+@import '1-custom/wvpt-header';
+@import '1-custom/wvpt-search';
+@import '1-custom/wvpt-breadcrumbs';
+@import '1-custom/wvpt-footer';
+@import '1-custom/wvpt-backpage';
+@import '1-custom/wvpt-blog';
+@import '1-custom/wvpt-profile';
 
 
-// WVPT Colors
-$wvpt-blue: #35c3e2;
-$wvpt-red: #ee2d24;
-$wvpt-purple: #5a479d;
+body {
+  border-top: .5em solid $wvpt-blue;
+}
 
-//breakpoints
+.container,
+main {
+  @include outer-container;
+}
 
-$xlarge: new-breakpoint(min-width 1200px);
-$large: new-breakpoint(min-width 1000px);
-$medium: new-breakpoint(min-width 800px);
-$small: new-breakpoint(min-width 640px);
-$xsmall: new-breakpoint(min-width 320px);
+// coming soon page information
+.frontpage_header {
+  margin-top: 7em;
 
-.container, main {@include outer-container;}
-
-.header {
-  margin-top:7em;
-  .logo {
-    margin:auto;
-    height:217px;
-    width:300px;
-    background-image:url("../images/WVPT-logo.png");
+  .frontpage_logo {
+    background-image: url('../images/WVPT-logo.png');
+    height: 217px;
+    margin: auto;
+    width: 300px;
   }
 }
 
-main {
-  .placeholder h1 {
+.placeholder {
     text-align:center;
-    font-size:2em;
-    font-weight:600;
+}
+
+//featured image and description
+.featured_image {
+
+  @include media($xsmall) {
+    padding:0 1em;
   }
-  .placeholder p {
-    text-align:center;
-    font-weight:600;
+  @include media($medium) {
+    padding:0;
+  }
+  img {
+    width:100%;
+  }
+}
+
+.featured_description {
+  margin-bottom:2em;
+  border-bottom:1px solid $wvpt-lightgrey;
+  font-family:'Libre Baskerville', serif;
+  line-height:2.2em;
+  h1 {
+    font-family:'Playfair Display', serif;
+    font-weight:900;
+    color:$wvpt-purple;
+  }
+  @include media($xsmall) {
+    padding:0 1em;
+  }
+  @include media($medium) {
+    padding:0 0 2em 0;
+  }
+  p {
+    font-family:'Libre Baskerville', serif;
+    line-height:2.2em;
+  }
+}
+
+// two columns on homepage
+
+.main_column_1,
+.main_column_2 {
+  font-family:'Lato', sans-serif;
+  line-height:2em;
+  img {
+    width:100%;
+  }
+  @include media($xsmall) {
+    padding:0 1em;
+  }
+}
+
+.main_column_1 {
+  @include media($medium) {
+    @include span-columns(7);
+    padding:0 0 2em 0;
+  }
+}
+.main_column_2 {
+  @include media($medium) {
+    @include span-columns(5);
+    padding:0 0 2em 0;
+  }
+}
+
+// partnerships
+
+.partnerships {
+  background-color: $wvpt-lightgrey;
+  padding: 2.5em 0;
+  .h3 {
+    font-family:'Playfair Display', serif;
+  }
+
+  .partner-logos {
+    @include outer-container;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+// homepage_smaller_image
+
+.featured_area_small {
+  border-bottom:1px solid $wvpt-lightgrey;
+  margin-bottom:2em;
+  @include media($medium) {
+    @include span-columns(12);
+  }
+}
+
+.featured_image_small {
+  @include media($xsmall) {
+    padding:0 1em;
+  }
+  @include media($medium) {
+    @include span-columns(8);
+    padding:0;
+  }
+  img {
+    width:100%;
+  }
+}
+
+.featured_description_small {
+  font-family:'Libre Baskerville', serif;
+  line-height:2em;
+  @include media($medium) {
+    @include span-columns(4);
+  }
+  h1 {
+    font-family:'Playfair Display', serif;
+    font-weight:900;
+    color:$wvpt-purple;
+    margin-top:0;
+  }
+  @include media($xsmall) {
+    padding:0 1em;
+  }
+  @include media($medium) {
+    padding:0 0 2em 0;
+  }
+  p {
+    font-family:'Libre Baskerville', serif;
+    line-height:2.2em;
   }
 }

@@ -2,26 +2,28 @@
 layout: default
 ---
 
-<div class="wvu-container">
+<div class="wvpt_backpage container">
+
+  <r:breadcrumbs ul_class="wvpt_breadcrumbs" />
 
   <r:comment><!-- NOTE: Blog articles use Schema.org's tags to structure your data & help with SEO: http://goo.gl/SKs4Qb --></r:comment>
 
-  <article id="maincontent" class="main wvu-article wvu-article--individual" role="article" itemscope="" itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-    <h1 class="wvu-article__title" itemprop="headline"><r:page:name /></h1>
-    <p class="wvu-article__meta">
+  <article id="maincontent" class="main wvpt-article wvpt-article--individual" role="article" itemscope="" itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+    <h1 class="wvpt-article__title" itemprop="headline"><r:page:name /></h1>
+    <p class="wvpt-article__meta">
       <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-        <span class="wvu-article__author" itemprop="name">
+        <span class="wvpt-article__author" itemprop="name">
           <r:article:author_full_name />
-        </span> <!-- /.wvu-article__author -->
+        </span> <!-- /.wvpt-article__author -->
       </span> <!-- /itemprop="author" -->
-      | <time class="wvu-article__date" datetime="<r:date_format format="iso8601" value="{article:published_at}" />"><r:date_format format="%A, %B %d, %Y" value="{article:published_at}" error_msg="Not Yet Published" /></time>
-    </p> <!-- /.wvu-article__meta -->
-    <div class="wvu-article__body" itemprop="articleBody">
+      | <time class="wvpt-article__date" datetime="<r:date_format format="iso8601" value="{article:published_at}" />"><r:date_format format="%A, %B %d, %Y" value="{article:published_at}" error_msg="Not Yet Published" /></time>
+    </p> <!-- /.wvpt-article__meta -->
+    <div class="wvpt-article__body" itemprop="articleBody">
       <r:editable_region name="article-body" />
-    </div> <!-- /.wvu-article__body -->
-  </article> <!-- /.wvu-article -->
+    </div> <!-- /.wvpt-article__body -->
+  </article> <!-- /.wvpt-article -->
 
-  <aside class="wvu-sidebar" role="complementary">
+  <aside class="wvpt-related-articles" role="complementary">
     <h3>Related Articles</h3>
     <r:blog:articles limit="5" tags="{article:tags}" exclude_ids="{article:id}">
       <r:if_articles>
@@ -33,12 +35,12 @@ layout: default
       </r:if_articles>
     </r:blog:articles>
 
-    <div class="wvu-sub-nav">
+    <div class="wvpt-sub-nav">
       <h3>Archives</h3>
-      <r:blog:archive:monthly ul_class="wvu-blog-archive" count_class="wvu-blog-archive__count" />
-    </div> <!-- /.wvu-sub-nav -->
-  </aside> <!-- /.wvu-sidebar -->
+      <r:blog:archive:monthly ul_class="wvpt-blog-archive" count_class="wvpt-blog-archive__count" />
+    </div> <!-- /.wvpt-sub-nav -->
+  </aside> <!-- /.wvpt-sidebar -->
 
   <r:comment><!-- Need comments for Blog Articles? See https://disqus.com --></r:comment>
 
-</div> <!-- /.wvu-container -->
+</div> <!-- /.wvpt-container -->

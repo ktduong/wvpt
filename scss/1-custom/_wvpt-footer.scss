@@ -1,0 +1,29 @@
+// footer
+
+footer {
+  background-color: $wvpt-purple;
+  padding: 1em 0;
+
+  .wvpt-copyright {
+    @include outer-container;
+
+    color: $wvpt-white;
+    font-family: 'Lato', sans-serif;
+
+    p {
+      font-size: .9em;
+    }
+
+    a {
+      color: $wvpt-blue;
+      font-size: .9em;
+      &:hover {
+        color:$wvpt-white;
+      }
+    }
+
+    @include media($xsmall) {
+      padding: 0 1em;
+    }
+  }
+}

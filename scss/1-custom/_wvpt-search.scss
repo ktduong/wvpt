@@ -1,0 +1,43 @@
+// SEARCH
+.wvpt-search {
+  float: right;
+
+  @include media($xsmall) {
+    float: none;
+    margin: 0 0 0 2.5em;
+  }
+
+  @include media($small) {
+    margin: 0 0 0 11.5em;
+  }
+
+  @include media($medium) {
+    float:right;
+    margin:0;
+  }
+
+  .form-search__field {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    padding: .5em;
+    width: 15em;
+  }
+
+  .form-search__submit {
+    background-color: $wvpt-blue;
+    background-image: url('../images/search-icon.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: 2px solid $wvpt-white;
+    color: $wvpt-darkgrey;
+    height: 43px;
+    padding: 4px 4px 0;
+    text-indent: -99999em;
+    width: 43px;
+  }
+
+  .form-search__label-text {
+    display: none;
+  }
+}

@@ -1,0 +1,130 @@
+// Blog Index
+
+.main_blog {
+    padding-top:0;
+    padding-bottom:0;
+    @include clearfix();
+    @include span-columns(12);
+
+  @include media($medium) {
+    @include span-columns(8);
+  }
+
+}
+
+aside.wvpt-blog-sidebar {
+  margin-bottom:3em;
+  @include span-columns(12);
+  @include media($medium) {
+    @include span-columns(3);
+    margin-left:2em;
+  }
+}
+
+.wvpt-blog-archive {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom:2em;
+
+  li {
+    padding-bottom: .75em;
+
+    a {
+      color: $wvpt-purple;
+      font-family: 'Lato', sans-serif;
+      font-size: 1em;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        color: $wvpt-blue;
+      }
+    }
+  }
+}
+
+
+.wvpt-article__meta {
+  color:$wvpt-darkgrey;
+}
+.wvpt-pagination {
+    @include clearfix();
+  padding-top:2em;
+  padding-left:0;
+  @include span-columns(8);
+  li {
+    list-style-type:none;
+    float:left;
+    margin-right:2em;
+    background-color: $wvpt-blue;
+    border: 0;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    font-weight:bold;
+    padding: 1em;
+    text-transform: uppercase;
+    margin-bottom:1em;
+    &:hover {
+      background-color:$wvpt-red;
+    }
+  }
+  a {
+    text-decoration:none;
+    color:$wvpt-white;
+  }
+}
+
+.rss_feed_link {
+  background-color: $wvpt-blue;
+  border: 0;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight:bold;
+  padding: 1em;
+  color:$wvpt-white;
+  text-transform: uppercase;
+  text-decoration:none;
+  &:hover {
+    background-color:$wvpt-red;
+    color:$wvpt-white;
+  }
+}
+
+// blog article
+.wvpt-article--individual {
+  @include span-columns(12);
+  
+  @include media($medium) {
+    @include span-columns(8);
+  }
+}
+
+.wvpt-related-articles {
+  @include span-columns(12);
+
+  @include media($medium) {
+    @include span-columns(3);
+    margin-left:2em;
+  }
+
+  a {
+    color: $wvpt-purple;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      color: $wvpt-blue;
+    }
+  }
+  ul {
+    list-style-type:none;
+    padding-left:0;
+    li {
+      padding-bottom:1em;
+      &:last-child {
+        padding-bottom:0;
+      }
+    }
+  }
+}

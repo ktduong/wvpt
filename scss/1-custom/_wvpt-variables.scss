@@ -1,0 +1,89 @@
+//WVPT Colors
+$wvpt-blue: #35c3e2;
+$wvpt-red: #ee2d24;
+$wvpt-purple: #5a479d;
+$wvpt-blue-link:#00a5c8;
+
+$wvpt-white: #FFFFFF;
+$wvpt-black: #000000;
+$wvpt-lightgrey: #e1e1e1;
+$wvpt-darkgrey: #545454;
+//$wvpt-blue: #002855;  TODO: This is the WVU blue used in nav pattern
+$wvpt-gold: #FFCC00;
+
+//breakpoints
+
+$xlarge: new-breakpoint(min-width 1200px);
+$large: new-breakpoint(min-width 1000px);
+$medium: new-breakpoint(min-width 800px);
+$small: new-breakpoint(min-width 640px);
+$xsmall: new-breakpoint(min-width 320px);
+
+// headers, p tag, a tag
+h1  {
+  font-family: 'Playfair Display', serif;
+  color:$wvpt-red;
+  font-weight:900;
+  font-size:2.3em;
+}
+
+h2  {
+  font-family: 'Playfair Display', serif;
+  color:$wvpt-purple;
+  font-weight:900;
+  font-size:2em;
+}
+
+h3  {
+  font-family: 'Playfair Display', serif;
+  color:$wvpt-black;
+  font-weight:900;
+  font-size:1.8em;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  color:$wvpt-blue-link;
+  font-weight:900;
+  font-size:1.5em;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight:900;
+  color:$wvpt-purple;
+  text-transform:uppercase;
+  font-size:1em;
+}
+
+h6 {
+  font-size:1em;
+  color:$wvpt-darkgrey;
+}
+
+a {
+  color:$wvpt-blue-link;
+  text-decoration:underline;
+  &:hover {
+    color:$wvpt-purple;
+  }
+}
+
+p {
+  line-height:2.2em;
+}
+
+hr {
+  color:$wvpt-lightgrey;
+  border-style:dashed;
+  margin: 2em 0;
+}
+
+blockquote {
+  font-family:'Libre Baskerville', serif;
+  line-height:2em;
+  font-size:1em;
+  width:75%;
+  color:$wvpt-darkgrey;
+  padding-top:1em;
+}

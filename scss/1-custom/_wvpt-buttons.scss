@@ -1,0 +1,62 @@
+// buttons
+.button-blue {
+  background-color: $wvpt-blue;
+  border: 0;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  padding: 1em;
+  text-transform: uppercase;
+  @include media($xsmall) {
+    margin-bottom:1em;
+  }
+
+  a {
+    color: $wvpt-white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $wvpt-red;
+  }
+}
+
+.button-red {
+  background-color: $wvpt-red;
+  border: 0;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  padding: 1em;
+  text-transform: uppercase;
+
+  a {
+    color: $wvpt-white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $wvpt-blue;
+  }
+}
+
+// tickets buttons
+
+.button-red-tickets {
+  background-color: $wvpt-red;
+  border: 0;
+  border-radius: 3px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 900;
+  padding: .5em;
+  width: 100%;
+
+  a {
+    color: $wvpt-white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $wvpt-blue;
+  }
+}

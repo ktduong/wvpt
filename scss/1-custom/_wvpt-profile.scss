@@ -1,0 +1,36 @@
+// profile_index
+
+.main_with_sidebar {
+  @include span-columns(12);
+  padding-bottom: 5em;
+  padding-top:0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height:2em;
+
+  @include media($medium) {
+      @include span-columns(8);
+  }
+}
+
+.wvpt-profile-sidebar {
+  @include span-columns(12);
+  @include media($medium) {
+      @include span-columns(3);
+      padding-bottom: 5em;
+      margin-left:2em;
+  }
+}
+
+ul.wvpt-profile {
+  list-style-type:none;
+  padding-left:0;
+  li {
+    border-bottom:1px solid $wvpt-lightgrey;
+    padding-bottom:1em;
+    margin-bottom:1em;
+    &:last-child {
+      border-bottom:none;
+    }
+  }
+}

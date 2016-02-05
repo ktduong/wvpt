@@ -11,6 +11,9 @@
     <r:include_stylesheet name="styles" />
     <link rel="shortcut icon" type="image/png" href="http://wvpublictheatre.org/favicon.ico" />
 
+    <!-- google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Playfair+Display:400,400italic,700,700italic,900,900italic|Libre+Baskerville' rel='stylesheet' type='text/css'>
+
     <!--[if lt IE 9]>
       <r:include_stylesheet name="ie8" />
     <![endif]-->
@@ -24,16 +27,64 @@
 
   </head>
   <body class="<r:page:template:name /> page-<r:page:id /> page-<r:page:slug />">
-  
+  <a class="wvpt-skip-nav" href="#maincontent">Skip to main content</a>
+
+
     <div class="container">
       <div class="header">
-        <div class="logo"> </div>
+        <div class="logo"></div>
+
+        <div class="header-right">
+          <div class="wvpt-nav-container">
+            <div class="wvpt-nav <r:var name="wvpt_nav" />">
+                <r:site_menu ul_class="wvpt-nav-items nav-collapse" />
+          </div>
+          </div><!-- close navigation -->
+
+
+          <!-- search -->
+          <div class="wvpt-search">
+            <form class="form-search" action="//search.wvu.edu/search" method="get" role="search">
+
+              <label class="form-search__label" for="q">
+                <span class="form-search__label-text">Search</span>
+                <input id="q" class="form-search__field" name="q" maxlength="256" placeholder="Search..." type="search" />
+              </label>
+
+              <input id="sort" name="sort" type="hidden" value="date:D:L:d1" />
+              <input id="output" name="output" type="hidden" value="xml_no_dtd" />
+              <input id="ie" name="ie" type="hidden" value="UTF-8" />
+              <input id="oe" name="oe" type="hidden" value="UTF-8" />
+              <input id="proxystylesheet" name="proxystylesheet" type="hidden" value="default_frontend" />
+              <input id="client" name="client" type="hidden" value="default_frontend" />
+              <input class="form-search__submit" name="btnG" type="submit" value="Search" />
+
+            </form>
+          </div>
+          <!-- end search code -->
+        </div>
+
       </div>
     </div>
-  
+
     <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/DFAsPv --></r:comment>
     <r:yield />
-  
+
+    <!-- partnerships -->
+
+    <div class="partnerships">
+      <div class="partner-logos">
+        <r:editable_region name="partners"/>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="wvpt-copyright">
+        <r:editable_region name="footer"/>
+      </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="https://code.wvu.edu/public/vendor/jquery/1.11.1/jquery.min.js"><\/script>')</script>
     <r:include_javascript name="vendor/responsive-nav, responsive-nav--custom" />

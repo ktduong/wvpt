@@ -8,7 +8,8 @@ shared_themes:
 editable_region:
 
   main: "This content comes from the mock_data.yml file in your project's root. Open the file to edit this content."
-
+  featured-image: |
+    <img src="http://placehold.it/1088x371">
   sidebar: "This is an editable region in the sidebar."
 
   wvu-masthead__title:
@@ -197,15 +198,42 @@ editable_region:
   wvu-profile__short-description:
     "This is a short description for this profile. <%= Faker::Hacker.say_something_smart %>"
 
+  buy-tickets: |
+    <button class="button-red-tickets"><a href="link">Buy Tickets Now</a></button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia vel erat nec dignissim. Aenean vitae consectetur elit, quis commodo tortor. Fusce turpis orci, hendrerit id lorem at, feugiat finibus ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nulla nibh, non tempus purus ultricies sit amet. Integer quis suscipit odio.</p>
+
+  coming-soon: |
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia vel erat nec dignissim. Aenean vitae consectetur elit, quis commodo tortor. Fusce turpis orci, hendrerit id lorem at, feugiat finibus ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nulla nibh, non tempus purus ultricies sit amet. Integer quis suscipit odio.</p>
+
+  partners: |
+    <h3>Partnered With</h3>
+
   wvu-profile__photo: |
     <img src="<%= Faker::Avatar.image %>" alt=" " />
 
-  contact: |
-    <p><strong>Department of the Department</strong></p>
-    <p>1234 Van Voorhis Road | P.O. Box 5555</p>
-    <p>Morgantown, WV 26506-5555</p>
-    <p><strong>Phone:</strong> 304.293.5555 | <strong>Fax:</strong> 304.293.5555</p>
-    <p><strong>Email:</strong> <a href="mailto:first.last@mail.wvu.edu">first.last@mail.wvu.edu</a></p>
+  footer: |
+    <p>testing</p>
+    <a href="link">Link</a>
+
+  featured-description: |
+    <h1>On Stage Now</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia vel erat nec dignissim. Aenean vitae consectetur elit, quis commodo tortor. Fusce turpis orci, hendrerit id lorem at, feugiat finibus ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nulla nibh, non tempus purus ultricies sit amet. Integer quis suscipit odio.</p>
+    <button class="button-blue"><a href="link">Sample Button</a></button>
+
+  main: |
+
+    <h2>This is a test.</h2>
+    <h3>This is a test.</h3>
+    <h4>This is a test.</h4>
+    <h5>This is a test.</h5>
+    <h6>This is a test.</h6>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia vel erat nec dignissim. Aenean vitae consectetur elit, quis commodo tortor. Fusce turpis orci, hendrerit id lorem at, feugiat finibus ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nulla nibh, non tempus purus ultricies sit amet. Integer quis suscipit odio.</p>
+    <a href="test">Sample Link</a>
+
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia vel erat nec dignissim. Aenean vitae consectetur elit, quis commodo tortor. Fusce turpis orci, hendrerit id lorem at, feugiat finibus ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse fringilla nulla nibh, non tempus purus ultricies sit amet. Integer quis suscipit odio.</blockquote>
+
+
 
 site:
   name: "West Virginia Public Theate"
@@ -259,12 +287,14 @@ if_page_depth_eq: 1
 if_page_depth_gt: 1
 
 site_menu: |
-  <ul class="wvu-nav__items nav-collapse">
-    <li class="active"><a href="#">Hello</a></li>
-    <li><a href="#">World</a></li>
-    <li><a href="#"><%= Faker::Lorem.word.capitalize %></a></li>
-    <li><a href="#"><%= Faker::Lorem.word.capitalize %></a></li>
-    <li><a href="#"><%= Faker::Lorem.word.capitalize %></a></li>
+  <ul class="wvpt-nav-items nav-collapse">
+    <li class="active"><a href="#">Home</a></li>
+    <li class="active"><a href="#">Events</a></li>
+    <li><a href="#">Tickets</a></li>
+    <li><a href="#">Media</a></li>
+    <li><a href="#">Donate</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
   </ul>
 
 sub_menu: |

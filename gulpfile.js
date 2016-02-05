@@ -2,6 +2,7 @@
 
 var gulp          = require('gulp'),
     sass          = require('gulp-sass'),
+    sourcemaps    = require('gulp-sourcemaps'),
     browserSync   = require('browser-sync'),
     reload        = browserSync.reload;
 
@@ -16,8 +17,14 @@ gulp.task('browser-sync', function () {
 // Sass task
 // Compile Our Sass from the "scss" directory
 gulp.task('sass', function () {
+
   gulp.src(['./scss/*.scss','!./scss/_*.scss'])
+    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(sourcemaps.write('maps', {
+      includeContent: false,
+      sourceRoot: './build/css/'
+    }))
     .pipe(gulp.dest('./stylesheets'));
 });
 
