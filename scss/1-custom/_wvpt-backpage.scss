@@ -81,3 +81,17 @@ main {
     }
   }
 }
+
+
+// backpage two column
+
+.main_backpage_2 {
+  padding-bottom:1.5em;
+}
+
+.backpage_column {
+  @include media($medium) {
+    @include span-columns(6);
+    margin-bottom:3em;
+  }
+}

@@ -1333,6 +1333,23 @@ main p {
   color: #35c3e2;
 }
 
+.main_backpage_2 {
+  padding-bottom: 1.5em;
+}
+
+@media screen and (min-width: 800px) {
+  .backpage_column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-bottom: 3em;
+  }
+  .backpage_column:last-child {
+    margin-right: 0;
+  }
+}
+
 .main_blog {
   padding-top: 0;
   padding-bottom: 0;
