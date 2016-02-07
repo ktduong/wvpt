@@ -949,7 +949,7 @@ ul.show-menu ul {
 }
 
 .logo {
-  background-image: url("../images/wvpt-logo-reg.jpg");
+  background-image: url("../images/WVPT-logo-reg.jpg");
   background-repeat: no-repeat;
   display: inline-block;
   height: 586px;
@@ -995,7 +995,7 @@ ul.show-menu ul {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    background-image: url("../images/wvpt-logo-retina.png");
+    background-image: url("../images/WVPT-logo-retina.png");
     background-repeat: no-repeat;
     background-size: 586px 165px;
     height: 165px;
@@ -1008,7 +1008,7 @@ ul.show-menu ul {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
   .logo {
-    background-image: url("../images/wvpt-logo-retina.png");
+    background-image: url("../images/WVPT-logo-retina.png");
   }
 }
 
@@ -1614,8 +1614,14 @@ ul.wvpt-profile li:last-child {
   border-bottom: none;
 }
 
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   border-top: 0.5em solid #35c3e2;
+  background-color: #FFFFFF;
 }
 
 .container,

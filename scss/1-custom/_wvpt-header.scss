@@ -20,7 +20,7 @@
 
 // Logo
 .logo {
-  background-image: url('../images/wvpt-logo-reg.jpg');
+  background-image: url('../images/WVPT-logo-reg.jpg');
   background-repeat: no-repeat;
   display: inline-block;
   height: 586px;
@@ -50,7 +50,7 @@
   @include media ($large) {
     @include span-columns(3);
 
-    background-image: url('../images/wvpt-logo-retina.png');
+    background-image: url('../images/WVPT-logo-retina.png');
     background-repeat: no-repeat;
     background-size: 586px 165px;
     height: 165px;
@@ -58,7 +58,7 @@
   }
 
   @include hidpi(1.5) {
-    background-image: url('../images/wvpt-logo-retina.png');
+    background-image: url('../images/WVPT-logo-retina.png');
   }
 }
 

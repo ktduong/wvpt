@@ -17,9 +17,14 @@
 @import '1-custom/wvpt-blog';
 @import '1-custom/wvpt-profile';
 
+html, body {
+  padding:0;
+  margin:0;
+}
 
 body {
   border-top: .5em solid $wvpt-blue;
+  background-color:$wvpt-white;
 }
 
 .container,
