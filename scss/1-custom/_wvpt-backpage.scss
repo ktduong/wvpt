@@ -17,7 +17,9 @@
 main {
   padding-bottom: 5em;
   padding-top: 2em;
-
+  @include media($medium) {
+    @include span-columns(11);
+  }
   p {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
@@ -53,7 +55,7 @@ main {
   line-height:2em;
 
   @include media($medium) {
-      @include span-columns(8);
+      @include span-columns(9);
   }
 
 }
@@ -93,8 +95,28 @@ main {
 }
 
 .backpage_column {
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height:2em;
+  }
   @include media($medium) {
     @include span-columns(6);
+    margin-bottom:3em;
+  }
+}
+
+
+//backpage three column
+
+.backpage_column3 {
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height:2em;
+  }
+  @include media($medium) {
+    @include span-columns(4);
     margin-bottom:3em;
   }
 }

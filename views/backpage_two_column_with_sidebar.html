@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="wvpt_backpage container">
+
+
+  <r:breadcrumbs ul_class="wvpt_breadcrumbs" />
+
+  <div class="wvpt-sidebar">
+    <div class="wvpt-sub-nav">
+      <r:ancestor_menu start_depth="2" max_depth="3" ul_class="nav-secondary" active_class="nav-secondary--current-page" open_class="nav-secondary--open" />
+    </div> <!-- /.wvpt-sub-nav -->
+    <r:editable_region name="sidebar" />
+  </div>
+
+
+  <main id="maincontent" class="main_with_sidebar">
+    <h1><r:page:name /></h1>
+    <r:editable_region name="main" />
+
+      <div class="backpage_column">
+        <r:editable_region name="backpage_1" />
+      </div>
+
+      <div class="backpage_column">
+        <r:editable_region name="backpage_2" />
+      </div>
+
+  </main>
+
+
+</div>
+
+<r:partial name="layouts/social_media_footer" />

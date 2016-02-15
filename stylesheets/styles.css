@@ -1240,6 +1240,18 @@ main {
   padding-top: 2em;
 }
 
+@media screen and (min-width: 800px) {
+  main {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%;
+  }
+  main:last-child {
+    margin-right: 0;
+  }
+}
+
 main p {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
@@ -1305,7 +1317,7 @@ main p {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
+    width: 74.41059%;
   }
   .main_with_sidebar:last-child {
     margin-right: 0;
@@ -1340,6 +1352,12 @@ main p {
   line-height: 2em;
 }
 
+.backpage_column p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+}
+
 @media screen and (min-width: 800px) {
   .backpage_column {
     float: left;
@@ -1349,6 +1367,25 @@ main p {
     margin-bottom: 3em;
   }
   .backpage_column:last-child {
+    margin-right: 0;
+  }
+}
+
+.backpage_column3 p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 800px) {
+  .backpage_column3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-bottom: 3em;
+  }
+  .backpage_column3:last-child {
     margin-right: 0;
   }
 }
