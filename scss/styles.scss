@@ -30,7 +30,9 @@ body {
 .container,
 main {
   @include outer-container;
+  float:none;
 }
+
 
 // coming soon page information
 .frontpage_header {
@@ -50,12 +52,12 @@ main {
 
 //featured image and description
 .featured_image {
-
+  @include span-columns(12);
   @include media($xsmall) {
     padding:0 1em;
   }
   @include media($medium) {
-    padding:0;
+    padding:0 0 3em 0;
   }
   img {
     width:100%;
