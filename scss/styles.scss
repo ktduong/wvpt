@@ -88,6 +88,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   }
   @include media($medium) {
     margin-top:-2em;
+    padding:0;
   }
   img {
     width:100%;

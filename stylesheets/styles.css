@@ -1765,6 +1765,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 @media screen and (min-width: 800px) {
   .featured_image {
     margin-top: -2em;
+    padding: 0;
   }
 }
 
