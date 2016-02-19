@@ -1789,7 +1789,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 @media screen and (min-width: 800px) {
   .featured_description {
-    padding: 0 0 1em 0;
+    padding: 1em 0 0 0;
   }
 }
 
@@ -1822,6 +1822,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   color: #ee2d24;
   font-weight: 900;
   font-size: 1.5em;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 800px) {
