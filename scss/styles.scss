@@ -53,9 +53,28 @@ main {
     text-align:center;
 }
 
+// google search appliance
+.gsc-control-cse {
+  width:400px !important;
+}
+
+td.gsc-search-button {
+  height:25px !important;
+}
+
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+  background-color: $wvpt-blue;
+  background-image: url('../images/search-icon.png') !important;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  height:25px !important;
+}
+
 //featured image and description
 .featured_image {
   @include span-columns(12);
+  @include omega;
   @include media($xsmall) {
     padding:0 1em;
   }
@@ -68,6 +87,8 @@ main {
 }
 
 .featured_description {
+  @include span-columns(12);
+  @include omega;
   margin-bottom:2em;
   border-bottom:1px solid $wvpt-lightgrey;
   font-family:'Libre Baskerville', serif;

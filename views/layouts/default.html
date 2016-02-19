@@ -44,22 +44,19 @@
 
           <!-- search -->
           <div class="wvpt-search">
-            <form class="form-search" action="//search.wvpublictheatre.org/search" method="get" role="search">
-
-              <label class="form-search__label" for="q">
-                <span class="form-search__label-text">Search</span>
-                <input id="q" class="form-search__field" name="q" maxlength="256" placeholder="Search..." type="search" />
-              </label>
-
-              <input id="sort" name="sort" type="hidden" value="date:D:L:d1" />
-              <input id="output" name="output" type="hidden" value="xml_no_dtd" />
-              <input id="ie" name="ie" type="hidden" value="UTF-8" />
-              <input id="oe" name="oe" type="hidden" value="UTF-8" />
-              <input id="proxystylesheet" name="proxystylesheet" type="hidden" value="default_frontend" />
-              <input id="client" name="client" type="hidden" value="default_frontend" />
-              <input class="form-search__submit" name="btnG" type="submit" value="Search" />
-
-            </form>
+            <script>
+    (function() {
+      var cx = '011370485244112298222:_tsn4bea9fs';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:search></gcse:search>
           </div>
           <!-- end search code -->
         </div>

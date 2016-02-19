@@ -11,7 +11,10 @@ editable_region:
   featured-image: |
     <img src="http://placehold.it/1088x371">
   sidebar: "This is an editable region in the sidebar."
-
+  social_media: |
+    <% %w(Facebook Twitter YouTube LinkedIn).each do |social| %>
+      <div class="<%= social.downcase %>"><%= social %></div>
+    <% end %>
   wvu-masthead__title:
     "Department of English"
 
