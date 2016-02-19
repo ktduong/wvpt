@@ -1781,13 +1781,6 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   color: #5a479d;
 }
 
-.featured_description h4 {
-  font-family: 'Playfair Display', serif;
-  color: #ee2d24;
-  font-weight: 900;
-  font-size: 1.5em;
-}
-
 @media screen and (min-width: 320px) {
   .featured_description {
     padding: 0 1em;
@@ -1796,7 +1789,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 @media screen and (min-width: 800px) {
   .featured_description {
-    padding: 0 0 2em 0;
+    padding: 0 0 1em 0;
   }
 }
 
@@ -1821,6 +1814,14 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   .main_column_2 {
     padding: 0 1em;
   }
+}
+
+.main_column_1 h4,
+.main_column_2 h4 {
+  font-family: 'Playfair Display', serif;
+  color: #ee2d24;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 800px) {
