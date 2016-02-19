@@ -72,6 +72,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 }
 
 //featured image and description
+
 .featured_image {
   @include span-columns(12);
   @include omega;
@@ -79,7 +80,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
     padding:0 1em;
   }
   @include media($medium) {
-    padding:1em 0 0 0;
+    margin-top:-2em;
   }
   img {
     width:100%;
