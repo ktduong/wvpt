@@ -1751,7 +1751,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 @media screen and (min-width: 800px) {
   .featured_image {
-    padding: 0 0 3em 0;
+    padding: 0 0 2em 0;
   }
 }
 
@@ -1779,6 +1779,13 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   color: #5a479d;
+}
+
+.featured_description h4 {
+  font-family: 'Playfair Display', serif;
+  color: #ee2d24;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 320px) {
