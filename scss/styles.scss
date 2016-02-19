@@ -56,6 +56,13 @@ main {
 // google search appliance
 .gsc-control-cse {
   width:400px !important;
+  @include media($xsmall) {
+    margin-left:-3em;
+  }
+  @include media($medium) {
+    margin-left:0;
+    padding-right:0 !important;
+  }
 }
 
 td.gsc-search-button {

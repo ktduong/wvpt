@@ -1718,6 +1718,19 @@ main::after {
   width: 400px !important;
 }
 
+@media screen and (min-width: 320px) {
+  .gsc-control-cse {
+    margin-left: -3em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .gsc-control-cse {
+    margin-left: 0;
+    padding-right: 0 !important;
+  }
+}
+
 td.gsc-search-button {
   height: 25px !important;
 }
