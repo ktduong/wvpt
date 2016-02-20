@@ -854,45 +854,39 @@ ul.show-menu ul {
   }
 }
 
-.button-blue {
+a.button-blue {
   background-color: #35c3e2;
   border: 0;
   border-radius: 3px;
   font-family: 'Lato', sans-serif;
   padding: 1em;
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 320px) {
-  .button-blue {
-    margin-bottom: 1em;
-  }
-}
-
-.button-blue a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.button-blue:hover {
+@media screen and (min-width: 320px) {
+  a.button-blue {
+    margin-bottom: 1em;
+  }
+}
+
+a.button-blue:hover {
   background-color: #ee2d24;
 }
 
-.button-red {
+a.button-red {
   background-color: #ee2d24;
   border: 0;
   border-radius: 3px;
   font-family: 'Lato', sans-serif;
   padding: 1em;
   text-transform: uppercase;
-}
-
-.button-red a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.button-red:hover {
+a.button-red:hover {
   background-color: #35c3e2;
 }
 

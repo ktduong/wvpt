@@ -1,37 +1,31 @@
 // buttons
-.button-blue {
+  a.button-blue {
   background-color: $wvpt-blue;
   border: 0;
   border-radius: 3px;
   font-family: 'Lato', sans-serif;
   padding: 1em;
   text-transform: uppercase;
-  @include media($xsmall) {
-    margin-bottom:1em;
-  }
-
-  a {
-    color: $wvpt-white;
-    text-decoration: none;
-  }
+  color: $wvpt-white;
+  text-decoration: none;
+    @include media($xsmall) {
+      margin-bottom:1em;
+    }
 
   &:hover {
     background-color: $wvpt-red;
   }
 }
 
-.button-red {
+a.button-red {
   background-color: $wvpt-red;
   border: 0;
   border-radius: 3px;
   font-family: 'Lato', sans-serif;
   padding: 1em;
   text-transform: uppercase;
-
-  a {
-    color: $wvpt-white;
-    text-decoration: none;
-  }
+  color: $wvpt-white;
+  text-decoration: none;
 
   &:hover {
     background-color: $wvpt-blue;
