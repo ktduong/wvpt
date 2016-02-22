@@ -1801,7 +1801,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 @media screen and (min-width: 800px) {
   .featured_description {
-    padding: 0 0 2em 0;
+    padding: 2em 0 2em 0;
   }
 }
 
