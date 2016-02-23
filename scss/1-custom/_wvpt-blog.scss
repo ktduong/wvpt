@@ -93,7 +93,7 @@ aside.wvpt-blog-sidebar {
 // blog article
 .wvpt-article--individual {
   @include span-columns(12);
-  
+
   @include media($medium) {
     @include span-columns(8);
   }
@@ -127,4 +127,8 @@ aside.wvpt-blog-sidebar {
       }
     }
   }
+}
+
+.cs-blog-archive__count {
+  display:none;
 }

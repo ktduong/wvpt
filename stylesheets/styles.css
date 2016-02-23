@@ -1601,6 +1601,10 @@ aside.wvpt-blog-sidebar:last-child {
   padding-bottom: 0;
 }
 
+.cs-blog-archive__count {
+  display: none;
+}
+
 .main_with_sidebar {
   float: left;
   display: block;
