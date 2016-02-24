@@ -1239,7 +1239,7 @@ footer .wvpt-copyright a:hover {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 640px) {
   .wvpt_backpage img {
     width: auto;
   }

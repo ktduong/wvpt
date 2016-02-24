@@ -17,7 +17,7 @@
     @include media($xsmall) {
       width:100%
     }
-    @include media($medium) {
+    @include media($small) {
       width:auto;
     }
   }
