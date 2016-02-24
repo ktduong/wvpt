@@ -16,6 +16,10 @@
   img {
     @include media($xsmall) {
       margin-top:0 !important;
+      float:left !important;
+    }
+    @include media($medium) {
+      float:none;
     }
   }
 

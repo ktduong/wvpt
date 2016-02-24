@@ -1236,6 +1236,13 @@ footer .wvpt-copyright a:hover {
 @media screen and (min-width: 320px) {
   .wvpt_backpage img {
     margin-top: 0 !important;
+    float: left !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .wvpt_backpage img {
+    float: none;
   }
 }
 
