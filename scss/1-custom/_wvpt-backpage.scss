@@ -15,7 +15,10 @@
 
   img {
     @include media($xsmall) {
-      margin-top:0;
+      width:100%
+    }
+    @include media($medium) {
+      width:auto;
     }
   }
 
