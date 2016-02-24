@@ -12,6 +12,13 @@
   @include media($medium) {
     padding:0;
   }
+
+  img {
+    @include media($xsmall) {
+      margin-top:0;
+    }
+  }
+
 }
 
 main {

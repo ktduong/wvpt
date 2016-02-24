@@ -1233,6 +1233,12 @@ footer .wvpt-copyright a:hover {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .wvpt_backpage img {
+    margin-top: 0;
+  }
+}
+
 main {
   padding-bottom: 5em;
   padding-top: 2em;
