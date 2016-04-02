@@ -1879,6 +1879,10 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   }
 }
 
+.social_media {
+  margin-bottom: 1em;
+}
+
 .partnerships {
   background-color: #e1e1e1;
   padding: 2.5em 0;
