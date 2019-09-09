@@ -27,3 +27,12 @@ footer {
     }
   }
 }
+
+section {
+  background-color: $wvpt-blue;
+  color: $wvpt-black;
+  h1, h2, h3, h4, h5, h6 {
+    color: $wvpt-darkgrey;
+    padding: 1em 0;
+  }
+}
